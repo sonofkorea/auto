@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>사장님을 위한 자동 마케팅 비서 | 블로그·D사·N사 지도 자동화</title>
+<link rel="icon" type="image/x-icon" href="assets/logo.ico">
 <style>
   :root{
     --primary:#2563eb; --primary-dark:#1d4ed8; --bg:#f8fafc; --text:#0f172a;
@@ -16,7 +17,8 @@
   .container{max-width:1100px; margin:0 auto; padding:0 20px;}
   header{background:#fff; border-bottom:1px solid var(--border); position:sticky; top:0; z-index:10;}
   nav{display:flex; justify-content:space-between; align-items:center; padding:16px 20px; max-width:1100px; margin:0 auto;}
-  .logo{font-weight:800; font-size:20px; color:var(--primary);}
+  .logo{display:flex; align-items:center; gap:8px; font-weight:800; font-size:20px; color:var(--primary);}
+  .logo img{border-radius:6px;}
   nav ul{display:flex; gap:24px; list-style:none;}
   nav ul li a{font-size:14px; color:var(--muted); font-weight:500;}
   nav ul li a:hover{color:var(--primary);}
@@ -167,7 +169,7 @@
 
 <header>
   <nav>
-    <a href="#" class="logo">글쓰기AI</a>
+    <a href="#" class="logo"><img src="assets/logo.ico" alt="글쓰기AI 로고" width="26" height="26">글쓰기AI</a>
     <ul>
       <li><a href="#features">기능</a></li>
       <li><a href="#flow">이용방법</a></li>
