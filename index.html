@@ -81,6 +81,10 @@
   .compare-table th.highlight-col{border-radius:10px 10px 0 0;}
   .compare-table tbody tr:last-child td.highlight-col{border-radius:0 0 10px 10px;}
 
+  .common-benefits{margin-top:28px; text-align:center; font-size:13px; color:var(--muted); display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:8px;}
+  .common-benefits span:first-child{background:#dcfce7; color:#166534; font-weight:700; padding:3px 10px; border-radius:999px; font-size:12px;}
+  .dot-sep{opacity:.5;}
+
   .pricing{background:var(--bg); overflow-x:auto;}
   .price-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:18px; min-width:920px;}
   .price-card{position:relative; background:var(--card); border:2px solid var(--border); border-radius:14px; padding:28px 18px; text-align:center; transition:transform .2s;}
@@ -178,6 +182,7 @@
   <div class="container">
     <h1>블로그·당근마켓·스마트플레이스를<br>매일 대신 써주는<span> 사장님의 자동 마케팅 비서</span></h1>
     <p>대행사에 맡기자니 매달 부담스럽고, 직접 하자니 시간이 없으신가요? 사진만 넣어두면 나머지는 알아서 완성되고, 예약만 걸어두면 컴퓨터만 켜둬도 매일 새 글이 올라갑니다.</p>
+    <p style="font-size:14px; color:var(--primary-dark); font-weight:700; margin-top:-20px; margin-bottom:32px;">📌 사진 한 장 어디로도 보내지 않습니다 — 처리부터 발행까지 전부 내 컴퓨터 안에서</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-primary">10분이면 시작, 무료 상담 신청</a>
       <a href="#features" class="btn-outline">기능 살펴보기</a>
@@ -196,6 +201,7 @@
       <div class="problem-card"><div class="emoji">⏰</div><h3>글 하나에 1시간, 그마저도 미루기 일쑤</h3><p>블로그 하나 꾸준히 올리는 게 이렇게 힘든 일인 줄 몰랐어요.</p></div>
       <div class="problem-card"><div class="emoji">💸</div><h3>대행사는 부담, 직접 하기엔 벅참</h3><p>대행사에 맡기자니 매달 몇십만 원, 직접 하자니 시간이 없습니다.</p></div>
       <div class="problem-card"><div class="emoji">🔍</div><h3>검색해도 우리 가게는 안 나옴</h3><p>손님은 결국 검색해서 오는데, 정작 우리 가게는 검색 결과에 없어요.</p></div>
+      <div class="problem-card"><div class="emoji">📵</div><h3>사진·정보 넘기는 게 늘 찜찜함</h3><p>대행사에 우리 가게 사진, 고객 정보까지 보내는 게 마음에 걸렸어요.</p></div>
     </div>
   </div>
 </section>
@@ -227,6 +233,16 @@
         <div class="ba-arrow">→</div>
         <div class="ba-after"><span class="ba-label">AFTER</span>우리 동네, 우리 업종에 맞는 이야기가 자동으로 완성</div>
       </div>
+      <div class="ba-row">
+        <div class="ba-before"><span class="ba-label">BEFORE</span>사진·정보를 대행사에 매번 전달, 어디에 남는지도 모름</div>
+        <div class="ba-arrow">→</div>
+        <div class="ba-after"><span class="ba-label">AFTER</span>내 컴퓨터 안에서만 처리, 어디로도 전송되지 않음</div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-before"><span class="ba-label">BEFORE</span>새 기능 쓰려면 재설치·재계약</div>
+        <div class="ba-arrow">→</div>
+        <div class="ba-after"><span class="ba-label">AFTER</span>클릭 한 번으로 업데이트, 설정은 그대로 유지</div>
+      </div>
     </div>
   </div>
 </section>
@@ -250,7 +266,7 @@
         <div class="num">2</div>
         <h3>사진만 넣으면 나머지는 알아서</h3>
         <p>사진에 우리 가게 로고가 자동으로 들어가고, 제목이 담긴 대표 사진도 알아서 완성됩니다.</p>
-        <ul><li>가게 로고·워터마크 자동 삽입</li><li>어울리는 사진 자동 매칭</li></ul>
+        <ul><li>가게 로고·워터마크 자동 삽입</li><li>어울리는 사진 자동 매칭</li><li>우리 가게 사진, 업체 서버가 아니라 내 컴퓨터 안에서만 처리</li></ul>
       </div>
       <div class="feature-card">
         <img src="assets/screenshot-schedule.jpg" alt="발행 일정 설정 화면" class="feature-shot">
@@ -267,7 +283,12 @@
       <div class="feature-card">
         <div class="num">5</div>
         <h3>내 컴퓨터에만 저장, 어디로도 안 나가요</h3>
-        <p>로그인 정보와 고객 정보는 전부 내 컴퓨터에만 보관되어 유출 걱정 없이 마음 편하게 사용할 수 있습니다.</p>
+        <p>로그인 정보·고객 정보·가게 사진은 전부 내 컴퓨터에만 보관됩니다. 대행사에 넘길 필요 없이, 유출 걱정 없이 마음 편하게 사용하세요.</p>
+      </div>
+      <div class="feature-card">
+        <div class="num">6</div>
+        <h3>업데이트가 귀찮지 않아요</h3>
+        <p>새 기능·개선사항이 나와도 버튼 한 번이면 끝. 처음 설정한 내용, 예약해둔 글은 그대로 유지됩니다.</p>
       </div>
     </div>
   </div>
@@ -277,13 +298,14 @@
   <div class="container">
     <div class="section-title">
       <h2>이용 방법</h2>
-      <p>쉬운 4단계, 처음 설정만 해두면 이후는 자동입니다</p>
+      <p>쉬운 5단계, 처음 설정만 해두면 이후는 자동입니다</p>
     </div>
     <div class="flow-grid">
       <div class="flow-step"><div class="step-num">1</div><h3>설치하고 로그인</h3><p>딱 한 번만 하면 됩니다</p></div>
-      <div class="flow-step"><div class="step-num">2</div><h3>가게 정보·사진 등록</h3><p>업종/지역/사진을 등록해두세요</p></div>
+      <div class="flow-step"><div class="step-num">2</div><h3>가게 정보·사진 등록</h3><p>업종/지역/사진을 등록, 전부 내 컴퓨터에만 저장</p></div>
       <div class="flow-step"><div class="step-num">3</div><h3>"자동으로 발행해줘" 켜기</h3><p>버튼 하나로 시작됩니다</p></div>
       <div class="flow-step"><div class="step-num">4</div><h3>컴퓨터만 켜두고 지켜보기</h3><p>손님이 늘어나는 걸 지켜보기만 하세요</p></div>
+      <div class="flow-step"><div class="step-num">5</div><h3>새 버전은 버튼 한 번으로</h3><p>업데이트 알림이 오면 클릭 한 번, 설정은 그대로 유지</p></div>
     </div>
   </div>
 </section>
@@ -305,8 +327,12 @@
           <tr><td>발행량</td><td>건별 구매, 늘리려면 추가 결제</td><td class="highlight-col">등급에 따라 하루 최대 5건까지 자동 반복</td></tr>
           <tr><td>수정</td><td>보통 1~2회로 제한</td><td class="highlight-col">설정만 바꾸면 언제든 다시 생성</td></tr>
           <tr><td>채널 관리</td><td>채널별 별도 담당자·별도 견적</td><td class="highlight-col">블로그·당근·스마트플레이스 한 화면에서 관리</td></tr>
-          <tr><td>개인정보</td><td>업체 서버·담당자에게 계정 정보 전달</td><td class="highlight-col">로그인 정보는 내 컴퓨터에만 저장</td></tr>
-          <tr><td>지속성</td><td>계약 종료 시 관리 중단</td><td class="highlight-col">한 번 설치로 계속 직접 운영</td></tr>
+          <tr><td>사진 전달</td><td>카톡·이메일로 업체에 매번 전송</td><td class="highlight-col">전송 없음 — 내 컴퓨터 안에서 처리</td></tr>
+          <tr><td>고객 정보 보관</td><td>업체 서버·직원 PC에 남음</td><td class="highlight-col">내 컴퓨터에만 저장</td></tr>
+          <tr><td>글 작성 주체</td><td>외주 작성자 (품질 편차, 유출 우려)</td><td class="highlight-col">내 컴퓨터에서 자동 생성</td></tr>
+          <tr><td>속도·양 조절</td><td>대행사 일정에 맞춰야 함</td><td class="highlight-col">하루 발행량을 내가 직접 설정</td></tr>
+          <tr><td>중단·재개</td><td>계약 해지 절차 필요</td><td class="highlight-col">언제든 켜고 끄기만 하면 됨</td></tr>
+          <tr><td>업데이트</td><td>새 서비스 별도 계약 필요</td><td class="highlight-col">버튼 한 번, 설정은 그대로 유지</td></tr>
         </tbody>
       </table>
     </div>
@@ -359,6 +385,12 @@
         <a href="#contact" class="btn-outline" style="display:block;">신청하기</a>
       </div>
     </div>
+    <div class="common-benefits">
+      <span>✔ 전 등급 공통</span>
+      <span>사진·정보 외부 전송 없음 — 내 컴퓨터 안에서만 처리</span>
+      <span class="dot-sep">·</span>
+      <span>업데이트는 항상 무료·간편</span>
+    </div>
   </div>
 </section>
 
@@ -367,6 +399,7 @@
     <div class="section-title">
       <h2>이용 후기</h2>
       <p class="example-tag">※ 아래 후기는 실제 고객 후기가 아닌 예시입니다</p>
+      <p style="font-size:14px; color:var(--primary-dark); font-weight:700; margin-top:14px;">업로드도, 전송도 없습니다 — 처리부터 발행까지 전부 내 컴퓨터 안에서 · 업데이트는 항상 무료·간편</p>
     </div>
     <div class="review-grid">
       <div class="review-card">
@@ -396,6 +429,9 @@
   <div class="faq-item"><h3>AI가 쓴 티 나지 않나요?</h3><p>우리 동네, 우리 업종에 맞춰 매번 다른 이야기로 구성되어 자연스럽게 채워집니다.</p></div>
   <div class="faq-item"><h3>컴퓨터를 계속 켜둬야 하나요?</h3><p>자동 발행이 진행되는 동안만 켜두시면 됩니다.</p></div>
   <div class="faq-item"><h3>설정이 복잡하지 않을까요?</h3><p>초기 설정 한 번만 해두면 이후는 그대로 유지되어 어렵지 않습니다.</p></div>
+  <div class="faq-item"><h3>가게 사진이나 고객 정보를 어디로 보내나요?</h3><p>어디로도 안 보냅니다. 프로그램이 설치된 내 컴퓨터 안에서만 처리되고 저장됩니다.</p></div>
+  <div class="faq-item"><h3>업데이트할 때마다 다시 설치해야 하나요?</h3><p>아니요, 새 버전이 나오면 프로그램 안에서 바로 업데이트할 수 있어요. 처음 설정해둔 내용, 로그인 정보는 그대로 유지됩니다.</p></div>
+  <div class="faq-item"><h3>업데이트하면 예약해둔 글이 사라지나요?</h3><p>아니요, 예약·설정 내용은 그대로 유지된 채 프로그램만 최신 버전으로 바뀝니다.</p></div>
   <div class="faq-item"><h3>설치는 어떻게 하나요?</h3><p>설치 파일을 다운로드해 실행하면 됩니다. 초기 설치는 1회만 필요하며, 이후 로그인도 최초 1회 후 자동 유지됩니다.</p></div>
   <div class="faq-item"><h3>개인정보는 안전한가요?</h3><p>로그인 정보와 고객 데이터는 서버가 아닌 사용자의 컴퓨터에만 저장됩니다.</p></div>
   <div class="faq-item"><h3>여러 지점/계정을 함께 쓸 수 있나요?</h3><p>네, 멀티 채널 및 여러 지점/계정 전환을 지원합니다.</p></div>
@@ -406,6 +442,7 @@
   <div class="container">
     <h2>지금 바로 10분만 투자해보세요</h2>
     <p>어떤 요금제가 맞을지, 어떻게 시작하면 될지 알려드립니다</p>
+    <p style="font-size:14px; opacity:.85; margin-top:-24px; margin-bottom:28px;">사진 한 장 안 보내고 시작하세요 — 처리는 전부 내 컴퓨터 안에서</p>
     <div id="consultBadge" class="consult-badge"></div>
     <div class="contact-btns">
       <a href="https://open.kakao.com/o/sdr7akIi" target="_blank" rel="noopener">카카오톡 상담</a>
