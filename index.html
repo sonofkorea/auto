@@ -46,7 +46,8 @@
 
   .features{background:var(--bg);}
   .feature-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px;}
-  .feature-card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:28px;}
+  .feature-card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:28px; overflow:hidden;}
+  .feature-shot{width:calc(100% + 56px); margin:-28px -28px 20px; display:block; border-bottom:1px solid var(--border);}
   .feature-card .num{display:inline-flex; width:36px; height:36px; background:#eff6ff; color:var(--primary); border-radius:8px; align-items:center; justify-content:center; font-weight:700; margin-bottom:16px;}
   .feature-card h3{font-size:18px; margin-bottom:10px;}
   .feature-card p{font-size:14px; color:var(--muted); margin-bottom:10px;}
@@ -109,7 +110,7 @@
       <a href="#contact" class="btn-primary">무료 상담 신청</a>
       <a href="#features" class="btn-outline">기능 살펴보기</a>
     </div>
-    <div class="hero-visual">프로그램 스크린샷 / 데모 영상 영역</div>
+    <div class="hero-visual"><img src="assets/screenshot-main.jpg" alt="글쓰기 자동화 프로그램 메인 화면" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"></div>
   </div>
 </section>
 
@@ -135,18 +136,21 @@
     </div>
     <div class="feature-grid">
       <div class="feature-card">
+        <img src="assets/screenshot-tone.jpg" alt="성격·목표 선택 화면" class="feature-shot">
         <div class="num">1</div>
         <h3>AI 원고 자동 생성</h3>
         <p>Gemini 기반으로 지역명·동네 단위 실제 장소를 섞어 매번 다른 글을 생성합니다.</p>
         <ul><li>제목 3종 자동 생성</li><li>키워드 자동 볼드 처리</li></ul>
       </div>
       <div class="feature-card">
+        <img src="assets/screenshot-photo.jpg" alt="사진 합성 방식 선택 화면" class="feature-shot">
         <div class="num">2</div>
         <h3>사진 자동 합성</h3>
         <p>워터마크·배경·문구까지 AI가 알아서 합성하고 관련 사진을 자동으로 매칭합니다.</p>
         <ul><li>내 사진 워터마크 자동 합성</li><li>AI 배경+제목/문구 합성</li><li>태그 매칭 자동 사진 선택</li></ul>
       </div>
       <div class="feature-card">
+        <img src="assets/screenshot-schedule.jpg" alt="발행 일정 설정 화면" class="feature-shot">
         <div class="num">3</div>
         <h3>예약 발행 자동화</h3>
         <p>하루 발행량만 정하면 매일 정해진 시각에 자동으로 발행됩니다.</p>
