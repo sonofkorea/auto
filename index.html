@@ -87,11 +87,12 @@
 
   .pricing{background:var(--bg); overflow-x:auto;}
   .price-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:18px; min-width:920px;}
-  .price-card{position:relative; background:var(--card); border:2px solid var(--border); border-radius:14px; padding:28px 18px; text-align:center; transition:transform .2s;}
-  .price-card h3{font-size:15px; margin-bottom:8px;}
+  .price-card{position:relative; background:var(--card); border:2px solid var(--border); border-radius:14px; padding:28px 18px; text-align:center; transition:transform .2s; display:flex; flex-direction:column; height:100%;}
+  .price-card h3{font-size:15px; margin-bottom:8px; min-height:42px; display:flex; align-items:center; justify-content:center;}
   .price-card .price{font-size:26px; font-weight:800; margin:12px 0; color:var(--primary);}
   .price-card .price small{font-size:12px; color:var(--muted); font-weight:400;}
-  .price-card p.desc{font-size:13px; color:var(--muted); margin-bottom:16px;}
+  .price-card p.desc{font-size:13px; color:var(--muted); margin-bottom:16px; flex-grow:1;}
+  .price-card a{margin-top:auto;}
   .badge{display:inline-block; background:#eff6ff; color:var(--primary); font-size:11px; font-weight:700; padding:3px 10px; border-radius:999px; margin-bottom:10px;}
 
   /* 등급별 프레임 */
@@ -108,8 +109,8 @@
   .tier-premium .badge{background:#f3e8ff; color:#7e22ce;}
   .tier-premium .price{color:#7e22ce;}
 
-  .best-ribbon{position:absolute; top:14px; right:-30px; background:#1d4ed8; color:#fff; font-size:11px; font-weight:700; padding:4px 34px; transform:rotate(38deg); box-shadow:0 2px 6px rgba(0,0,0,.2);}
-  .diamond{position:absolute; top:-18px; left:50%; transform:translateX(-50%); font-size:22px; filter:drop-shadow(0 2px 4px rgba(0,0,0,.15));}
+  .best-ribbon{position:absolute; top:-13px; right:14px; background:#1d4ed8; color:#fff; font-size:11px; font-weight:700; padding:4px 14px; border-radius:999px; white-space:nowrap; box-shadow:0 2px 6px rgba(0,0,0,.25); z-index:2;}
+  .diamond{position:absolute; top:-18px; left:50%; transform:translateX(-50%); font-size:22px; filter:drop-shadow(0 2px 4px rgba(0,0,0,.15)); z-index:1;}
   .diamond-blue{color:#3b82f6; text-shadow:0 0 8px rgba(59,130,246,.6); animation:sparkle 2.4s ease-in-out infinite;}
   .diamond-purple{color:#a855f7; font-size:28px; text-shadow:0 0 14px rgba(168,85,247,.9), 0 0 28px rgba(168,85,247,.5); animation:sparkle 1.8s ease-in-out infinite;}
   @keyframes sparkle{
